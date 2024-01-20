@@ -9,9 +9,9 @@ This repository contains my solutions to leetcode problems over 101 days. Each d
 
 There is a ```main.go``` file that imports and runs the solutions.
 
-The solutions are organized in packages named by problem name. For e ample, the solution for two sum is in ```two-sum/solution.go```.
+The solutions are organized in packages named by problem name. For example, the solution for two sum is in ```two-sum/solution.go```.
 
-Each solution package contains a ```Solution``` method that e ecutes the solution and prints the result.
+Each solution package contains a ```Solution``` method that executes the solution and prints the result.
 
 The ```main.go``` file iterates through each day package, and calls the ```Solution``` method to run the solution.
 
