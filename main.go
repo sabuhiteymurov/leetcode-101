@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"leetcode-101/add-two-numbers"
+	jumpGame "leetcode-101/jump-game"
 	longestSubstringWithoutRepeatingChars "leetcode-101/longest-substring-without-repeating-chars"
 	"leetcode-101/two-sum"
 )
@@ -20,4 +21,8 @@ func main() {
 
 	// Longest substring without repeating chars
 	fmt.Println("3. Longest substring without repeating characters:", longestSubstringWithoutRepeatingChars.Solution("pwwkew"))
+
+	// Jump Game
+	fmt.Println("55. Jump Game:", jumpGame.CanJump([]int{3, 2, 1, 0, 4}))
+
 }
