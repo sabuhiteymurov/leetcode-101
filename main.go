@@ -3,6 +3,7 @@ package main
 import (
 	"fmt"
 	"leetcode-101/add-two-numbers"
+	longestSubstringWithoutRepeatingChars "leetcode-101/longest-substring-without-repeating-chars"
 	"leetcode-101/two-sum"
 )
 
@@ -16,4 +17,7 @@ func main() {
 	l2 := &addTwoNumbers.ListNode{5, &addTwoNumbers.ListNode{6, &addTwoNumbers.ListNode{4, nil}}}
 	addTwoNumbersOutput := addTwoNumbers.Solution(l1, l2)
 	fmt.Println("2. Add two numbers solution output:", addTwoNumbersOutput)
+
+	// Longest substring without repeating chars
+	fmt.Println("3. Longest substring without repeating characters:", longestSubstringWithoutRepeatingChars.Solution("pwwkew"))
 }
