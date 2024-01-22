@@ -1,22 +1,22 @@
 package jumpGame
 
 func CanJump(nums []int) bool {
-	var canJump bool
+	n := len(nums)
+	maxJump := 0
 
-	for i := 0; i < len(nums); i++ {
-		if i+1 == len(nums) && len(nums) != 1 {
-			break
-		}
-		if nums[i] == 0 {
-			if len(nums) == 1 {
-				canJump = true
-			}
-			continue
-		} else if (nums[i] + i) >= len(nums)-1 {
-			canJump = true
-		}
-
+	if n == 1 {
+		return true
 	}
 
-	return canJump
+	for i := 0; i < n-1 && maxJump >= i; i++ {
+		if (i + nums[i]) > maxJump {
+			maxJump = i + nums[i]
+		}
+
+		if maxJump >= n-1 {
+			return true
+		}
+	}
+
+	return false
 }

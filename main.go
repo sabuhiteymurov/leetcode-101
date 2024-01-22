@@ -23,6 +23,6 @@ func main() {
 	fmt.Println("3. Longest substring without repeating characters:", longestSubstringWithoutRepeatingChars.Solution("pwwkew"))
 
 	// Jump Game
-	fmt.Println("55. Jump Game:", jumpGame.CanJump([]int{3, 2, 1, 0, 4}))
+	fmt.Println("55. Jump Game:", jumpGame.CanJump([]int{2, 3, 1, 1, 4}))
 
 }
